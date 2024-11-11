@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-// Connect to MongoDB
-mongoose.connect("mongodb://Bhumika:root@ecommerce-shard-00-00.1kf8j.mongodb.net:27017,ecommerce-shard-00-01.1kf8j.mongodb.net:27017,ecommerce-shard-00-02.1kf8j.mongodb.net:27017/UserData?ssl=true&replicaSet=atlas-opw92l-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ECOMMERCE")
+// Connect to MongoDB (remove deprecated options)
+mongoose.connect("mongodb://ecommerce:priyanka@ac-svxf7ya-shard-00-00.ugavg21.mongodb.net:27017,ac-svxf7ya-shard-00-01.ugavg21.mongodb.net:27017,ac-svxf7ya-shard-00-02.ugavg21.mongodb.net:27017/Trial?ssl=true&replicaSet=atlas-jrvlfh-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0")
     .then(() => {
         console.log('Mongoose connected');
     })
